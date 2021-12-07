@@ -19,7 +19,7 @@ function App() {
       <Header />
       <div>
         {blogs.map((blog) => {
-          <BlogCard key={blog.id} {...blog} />;
+          return <BlogCard key={blog.id} {...blog} />;
         })}
       </div>
       <Footer />
